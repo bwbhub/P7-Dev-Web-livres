@@ -17,5 +17,26 @@
         "react"
     ],
     "rules": {
+    "linebreak-style": "off",
+    "space-infix-ops": "off",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "no-irregular-whitespace": "off",
+    "prefer-template": "off",
+    "arrow-parens": "off",
+    "no-restricted-globals": "off",
+    "no-use-before-define": "off",
+    "semi": "off",
+    "eol-last": "off",
+    "comma-dangle": "off",
+    "no-trailing-spaces": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "max-len": "off",
+    "object-shorthand": "off",
+    "prefer-destructuring": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-plusplus": "off"
     }
 }
