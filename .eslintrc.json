@@ -37,6 +37,7 @@
     "prefer-destructuring": "off",
     "no-param-reassign": "off",
     "no-shadow": "off",
-    "no-plusplus": "off"
+    "no-plusplus": "off",
+    "camelcase": "off"
     }
 }
