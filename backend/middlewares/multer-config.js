@@ -9,7 +9,7 @@ const newFilenameFunction = (og_filename, options) => {
 const storage = SharpMulter({
   destination: (req, file, callback) => callback(null, 'images'),
   imageOptions: {
-    fileFormat: 'jpeg',
+    fileFormat: 'webp',
     quality: 80,
     resize: { width: 500, height: null }
   },

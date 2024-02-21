@@ -39,9 +39,12 @@ exports.modifyBook = (req, res, next) => {
       if (book.userId !== req.auth.userId) {
         res.status(401).json({ message: 'Non autorisé !' })
       } else {
-        Book.updateOne({ _id: req.params.id }, { ...bookObject, _id: req.params.id })
-          .then(() => res.status(200).json({ message: 'Livre mis à jour !' }))
-          .catch(error => res.status(401).json({ error }))
+        const filename = book.imageUrl.split('/images/')[1]
+        fs.unlink(`images/${filename}`, () => {
+          Book.updateOne({ _id: req.params.id }, { ...bookObject, _id: req.params.id })
+            .then(() => res.status(200).json({ message: 'Livre mis à jour !' }))
+            .catch(error => res.status(401).json({ error }))
+        })
       }
     })
     .catch(error => res.status(400).json({ error }))
