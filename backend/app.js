@@ -5,9 +5,10 @@ const path = require('path')
 
 const bookRoutes = require('./routes/books')
 const userRoutes = require('./routes/user')
+const { pswApi, userNameApi } = require('./loginApi')
 
 mongoose.connect(
-  'mongodb+srv://bricebouhot:LIvCFbPkyIsG5HSe@cluster0.o3eqgqu.mongodb.net/?retryWrites=true&w=majority', 
+  `mongodb+srv://${userNameApi}:${pswApi}@cluster0.o3eqgqu.mongodb.net/?retryWrites=true&w=majority`, 
   { 
     useNewUrlParser: true,
     useUnifiedTopology: true 
