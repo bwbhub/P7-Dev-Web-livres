@@ -1,10 +1,10 @@
 # Mon vieux Grimoire
 
+npm start on the base file
 
-## Comment lancer le projet ? 
+you might want to create your own 'loginApi.js' to set your own mongodb cluster then
 
-### Avec npm
+cd backend
+nodemon server 
 
-Faites la commande `npm install` pour installer les dépendances puis `npm start` pour lancer le projet. 
-
-Le projet a été testé sur node 19. 
+and you all set to test. 
